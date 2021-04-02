@@ -25,6 +25,34 @@
         .move-text-div {
             word-wrap: break-word;
         }
+        .wallet-V2
+        {
+            max-width: 940px;
+            background: #fff;
+            color: #000;
+            min-width: 90px;
+            transform: translate(10px, -5px);
+            height: 25px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            box-shadow: 0px 0px 16px rgb(255 255 255 / 43%);
+            transition: 0.4s;
+        } 
+         .wallet-V2:hover
+         {
+             box-shadow: 0px 0px 30px rgb(255 255 255 / 43%);
+        }           
+        .nav-link.login
+        {
+            background: transparent !important;
+            color: #fff !important;
+        }
+        .nav-link.login:hover {
+        transform: scale(1) !important;
+        }
+        
     </style>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -89,6 +117,7 @@ type="text/javascript"></script>
 <div class="w-nav nav" data-collapse="small" data-animation="default" data-duration="400" data-contain="1">
     <div class="w-container">
         <nav class="w-nav-menu nav-menu" role="navigation">
+            <a class="w-nav-link nav-link wallet-V2" href="https://walletv2.beldex.io/">WALLET V2.0</a>
             <a class="w-nav-link nav-link" ng-show="!loggedIn()" ng-class="currentPage('create-your-account')" href="#!/create-your-account">CREATE NEW ACCOUNT</a>
             <a class="w-nav-link nav-link" ng-show="!loggedIn()" ng-class="currentPage('support')" href="#!/support">SUPPORT</a>
             <a class="w-nav-link nav-link pointer login" ng-show="!loggedIn()" data-ix="display-login" show-modal="login">LOG IN</a>
